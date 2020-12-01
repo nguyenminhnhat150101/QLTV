@@ -9,7 +9,7 @@ namespace DAL_QLTV
 {
     public class DBConnect
     {    
-        //string 
+        //string dfggfd
        protected SqlConnection _conn = new SqlConnection(@"Data Source=LAPTOP-O7CEPANL\MSSQLSERVER1;Initial Catalog=northwind;Integrated Security=True");
     }
 }
