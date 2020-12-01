@@ -10,5 +10,6 @@ namespace DTO_QLTV
     {
         public string MaTheLoai { get; set; }
         public string TenTheLoai { get; set; }
+
     }
 }
