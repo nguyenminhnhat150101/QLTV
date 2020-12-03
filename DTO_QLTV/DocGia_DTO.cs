@@ -6,15 +6,102 @@ using System.Threading.Tasks;
 
 namespace DTO_QLTV
 {
-    class DocGia_DTO
+    public class DocGia_DTO
     {
-        public string MaDocGia { get; set; }
-        public string HoTen { get; set; }
-        public int GioiTinh { get; set; }
-        public DateTime NamSinh { get; set; }
-        public string DiaChi { get; set; }
-        public string SoDienThoai { get; set; }
-        public string Email { get; set; }
-
+        public string madocgia;
+        public string hoten;
+        public int gioitinh;
+        public DateTime namsinh;
+        public string diachi;
+        public string sodienthoai;
+        public string email;
+        public string MaDocGia
+        {
+            get
+            {
+                return madocgia;
+            }
+            set
+            {
+                madocgia = value;
+            }
+        }
+        public string HoTen
+        {
+            get
+            {
+                return hoten;
+            }
+            set
+            {
+                hoten = value;
+            }
+        }
+        public int GioiTinh
+        {
+            get
+            {
+                return gioitinh;
+            }
+            set
+            {
+                gioitinh = value;
+            }
+        }
+        public DateTime NamSinh
+        {
+            get
+            {
+                return namsinh;
+            }
+            set
+            {
+                namsinh = value;
+            }
+        }
+        public string DiaChi
+        {
+            get
+            {
+                return diachi;
+            }
+            set
+            {
+                diachi = value;
+            }
+        }
+        public string SoDienThoai
+        {
+            get
+            {
+                return sodienthoai;
+            }
+            set
+            {
+                sodienthoai = value;
+            }
+        }
+        public string Email
+        {
+            get
+            {
+                return email;
+            }
+            set
+            {
+                email = value;
+            }
+        }
+        public DocGia_DTO(string madocgia, string hoten, int gioitinh, DateTime namsinh, string diachi, string sodienthoai, string email)
+        {
+            this.madocgia = madocgia;
+            this.hoten = hoten;
+            this.gioitinh = gioitinh;
+            this.namsinh = namsinh;
+            this.diachi = diachi;
+            this.sodienthoai = sodienthoai;
+            this.email = email;
+        }
+        public DocGia_DTO() { }
     }
 }

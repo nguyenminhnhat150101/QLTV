@@ -8,11 +8,80 @@ namespace DTO_QLTV
 {
     class PhieuMuon_DTO
     {
-        public string MaPhieu { get; set; }
-        public string MaDocGia { get; set; }
-        public string MaNhanVien { get; set; }
-        public DateTime NgayMuon { get; set; }
-        public DateTime NgayPhaiTra { get; set; }
-        public string TrangThai { get; set; }
+        public string maphieu;
+        public string madocgia;
+        public string manhanvien;
+        public DateTime ngaymuon;
+        public DateTime ngayphaitra;
+        public string trangthai;
+
+        public string MaPhieu
+        {
+            get
+            {
+                return maphieu;
+            }
+            set
+            {
+                maphieu = value;
+            }
+        }
+        public string MaDocGia
+        {
+            get
+            {
+                return madocgia;
+            }
+            set
+            {
+                madocgia = value;
+            }
+        }
+        public string MaNhanVien
+        {
+            get
+            {
+                return manhanvien;
+            }
+            set
+            {
+                manhanvien = value;
+            }
+        }
+        public DateTime NgayMuon
+        {
+            get
+            {
+                return ngaymuon;
+            }
+            set
+            {
+                ngaymuon = value;
+            }
+        }
+        public DateTime NgayPhaiTra
+        {
+            get
+            {
+                return ngayphaitra;
+            }
+            set
+            {
+                ngayphaitra = value;
+            }
+        }
+        public string TrangThai
+        {
+            get
+            {
+                return trangthai;
+            }
+            set
+            {
+                trangthai = value;
+            }
+        }
+
     }
+
 }
