@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS_QLTV;
+using DTO_QLTV;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +10,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace GUI_QLTV
 {
-    public partial class DangNhap : Form
+    public partial class FrmDangNhap : Form
     {
-        public DangNhap()
+        public FrmDangNhap()
         {
             InitializeComponent();
+        }
+        TaiKhoan_BUS busTaiKhoan = new TaiKhoan_BUS();
+        public string Quyen { get; set; }
+
+        private void btDangNhap_Click(object sender, EventArgs e)
+        {
+            TaiKhoan_DTO tk = new TaiKhoan_DTO();
+            tk.TaiKhoan = txtTaiKhoan.Text;
+            tk.MatKhau = busTaiKhoan.encryption(txtMatKhau.Text);
+            if (busTaiKhoan.DangNhap(tk))
+            {
+                FrmMain.taikhoan = tk.TaiKhoan;
+                DataTable dt = busTaiKhoan.KiemTraQuyen(tk.TaiKhoan);
+                Quyen = dt.Rows[0][0].ToString();
+                MessageBox.Show("Đăng nhập thành công");
+                FrmMain.session = 1;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập không thành công, kiểm tra lại email hoặc mật khẩu");
+                txtTaiKhoan.Text = null;
+                txtMatKhau = null;
+                txtTaiKhoan.Focus();
+            }
         }
     }
 }

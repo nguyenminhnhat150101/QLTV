@@ -51,5 +51,15 @@
     <Compile Include="TaiKhoan_BUS.cs" />
     <Compile Include="TheLoai_BUS.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL_QLTV\DAL_QLTV.csproj">
+      <Project>{614583C9-C513-4F06-B729-6A19A71F95DA}</Project>
+      <Name>DAL_QLTV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLTV\DTO_QLTV.csproj">
+      <Project>{8FB24494-B1A6-449A-88A3-C305C5C1772B}</Project>
+      <Name>DTO_QLTV</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

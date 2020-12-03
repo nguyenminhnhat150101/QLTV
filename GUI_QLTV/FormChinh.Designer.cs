@@ -1,6 +1,6 @@
 ﻿namespace GUI_QLTV
 {
-    partial class FormChinh
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -80,25 +80,25 @@
             // MS_LoaiSach
             // 
             this.MS_LoaiSach.Name = "MS_LoaiSach";
-            this.MS_LoaiSach.Size = new System.Drawing.Size(124, 22);
+            this.MS_LoaiSach.Size = new System.Drawing.Size(180, 22);
             this.MS_LoaiSach.Text = "Loại Sách";
             // 
             // MS_Sach
             // 
             this.MS_Sach.Name = "MS_Sach";
-            this.MS_Sach.Size = new System.Drawing.Size(124, 22);
+            this.MS_Sach.Size = new System.Drawing.Size(180, 22);
             this.MS_Sach.Text = "Sách";
             // 
             // MS_TacGia
             // 
             this.MS_TacGia.Name = "MS_TacGia";
-            this.MS_TacGia.Size = new System.Drawing.Size(124, 22);
+            this.MS_TacGia.Size = new System.Drawing.Size(180, 22);
             this.MS_TacGia.Text = "Tác Giả";
             // 
             // MS_DocGia
             // 
             this.MS_DocGia.Name = "MS_DocGia";
-            this.MS_DocGia.Size = new System.Drawing.Size(124, 22);
+            this.MS_DocGia.Size = new System.Drawing.Size(180, 22);
             this.MS_DocGia.Text = "Độc Giả";
             // 
             // MS_QLMuonTraSach
@@ -205,13 +205,13 @@
             this.txtChao.Size = new System.Drawing.Size(220, 20);
             this.txtChao.Text = "nhatnmps13276@fpt.edu.vn";
             // 
-            // FormChinh
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MS_Main);
-            this.Name = "FormChinh";
+            this.Name = "FrmMain";
             this.Text = "FormChinh";
             this.MS_Main.ResumeLayout(false);
             this.MS_Main.PerformLayout();
