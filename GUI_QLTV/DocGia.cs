@@ -16,6 +16,6 @@ namespace GUI_QLTV
         {
             InitializeComponent();
         }
-
+        //dgfdf
     }
 }
